@@ -1,0 +1,37 @@
+<html>
+<head>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	.img-container {
+		float: left;
+		width: 33.33%;
+		padding:5px;
+	}
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display:table;
+	}
+</style> 
+</head>
+<body>
+	<h2>Images side by Side</h2>
+	<p>With the CSS float property, it is easy to float images side by side:</p>
+
+	<div class="clearfix">
+		<div class="img-container">
+			<img src="pexels-photo.jpg" alt="pexels-photo" style="width:100%">
+		</div>
+	<div class="clearfix">
+		<div class="img-container">
+			<img src="pexels-photo.jpg" alt="pexels-photo" style="width:100%">
+		</div>
+	<div class="clearfix">
+		<div class="img-container">
+			<img src="pexels-photo.jpg" alt="pexels-photo" style="width:100%">
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<body>
+	<p>Creating and using an object method </p>
+
+	<p id="demo"></p>
+	<script>
+		var person = {
+			firstName:"Norapat",
+			lastName: "Tantikamot",
+			id		:590385,
+			fullName : function(){
+				return this.firstName + " " + this.lastName;
+			}
+		};
+		document.getElementById("demo").innerHTML=person.fullName();
+	</script>
+</body>
+</html>

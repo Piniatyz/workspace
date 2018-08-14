@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NavBar-Dropdown</title>
+	<style>
+	body {
+		margin:0;
+	}
+.header {
+	background-color:#f1f1f1;
+	padding:20px;
+	text-align:center;
+}
+	ul {
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+		overflow:hidden;
+		background-color:#808080;
+	}
+	li {
+		float: left;
+	}
+	li a, .dropbtn{
+		display:inline-block;
+		color:white;
+		text-align: center;
+		margin-left: 50px;
+		padding:20px 21px;
+		text-decoration: none;
+		font-size:20px;
+		border-radius: 5px;
+	}
+	li a:hover, .dropdown:hover .dropbtn{
+		background-color:#ff8080;
+	}
+	li.dropdown {
+		display:inline-block;
+	}
+	.dropdown-content {
+		display:none;	
+
+		position:absolute;
+		background-color:#f9f9f9;
+		min-width:80px;
+		/* box-shadow:50px 1px 16px 0px rgba(0,0,0,0.2); */
+		z-index:1;
+	}
+	.dropdown-content a {
+		color:darkcyan;
+		padding:12px 16px;
+		text-decoration:none;
+		display: block;
+		text-align:left;
+	}
+	.dropdown-content a:hover {background-color: #ffe6e6;}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<p style="font-size: 40px;color:darkcyan;">WIDER</p>
+	</div>
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#news">Healthy</a></li>
+		
+		<li class="dropdown">
+<a href="javascript:void(0)" class="dropbtn">News</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+			</li>
+
+	</ul>
+	<!-- <h3>Dropdown Meny inside a Navbar</h3>
+	<p>Hover over the "dropdown" link to see the dropdown menu</p> -->
+
+</body>
+</html>

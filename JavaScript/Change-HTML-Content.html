@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change HTML Content</title>
+</head>
+<body>
+	<button onclick="document.getElementById('myImage').src='lighton.jpg'">Turn on the light </button>
+
+	<img id="myImage" src="lightoff.jpg" style="width:100px">
+
+	<button onclick="document.getElementById('myImage').src='lightoff.jpg'">Turn off the light </button> <br><br>
+
+	<p id="test"> JS can change the style of an HTML Element</p>
+	<button type="button" onclick="document.getElementById('test').style.fontSize='35px'">Click Me!</button>
+	
+	<p id="test2">Hide Text</p><br><br>
+	<button type="button" onclick="document.getElementById('test2').style.display='none'">Click Me!</button>
+
+	<p id="test3" style="display:none">Hello Java </p><br><br>
+	<button type="button" onclick="document.getElementById('test3').style.display='block'">Click Me!</button>
+</body>
+</html>
