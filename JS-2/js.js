@@ -20,3 +20,11 @@ var hotText = "Google";
 var URL ='https://www.google.com/';
 document.write("<br>")
 document.write('Click to return to ' + hotText.link(URL));
+document.write("<br>")
+
+
+var VisitorAge2 = prompt("How Many Years Have You Been Alive For?");
+
+var YearsAlive = parseInt(VisitorAge2);
+YearsAlive = YearsAlive * 365;
+document.write("You Have been Alive for "+ YearsAlive +"Days!!");
